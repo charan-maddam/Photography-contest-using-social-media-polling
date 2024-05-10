@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create or manage</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'create_manage.css' %}">
+</head>
+<body>
+  <div class="container">
+    <a href="{% url 'create' %}"><button>create contest</button></a>
+    <a href="{% url 'manage' %}"><button >manage contest</button></a>
+  </div>
+  <a class="profile-link" href="{% url 'profile' %}">Your Profile</a>
+
+  
+</body>
+</html>

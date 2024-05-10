@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Contest</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'create_contest.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>CREATE CONTEST</h1>
+    <form id="contest-form" method="POST" action="{% url 'create' %}">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="theme">Contest Theme:</label>
+        <input type="text" id="theme" name="theme" required>
+      </div>
+      <div class="form-group">
+        <label for="start-date">Start Date</label>
+        <input type="date" id="start-date" name="startdate" required>
+      </div>
+      <div class="form-group">
+        <label for="end-date">End Date</label>
+        <input type="date" id="end-date" name="enddate" required>
+      </div>
+      <!-- Add more form fields as needed -->
+      <div class="form-group">
+        <button type="submit">Create Contest</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Include necessary JavaScript files here -->
+  <script src="scripts.js"></script>
+</body>
+</html>

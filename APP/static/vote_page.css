@@ -1,0 +1,42 @@
+body {
+  font-family:sans-serif;
+  background-color: white; /* Add white background color */
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: calc(50% - 40px);
+  margin: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.image img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.like-button {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.like-button:focus {
+  outline: none;
+}

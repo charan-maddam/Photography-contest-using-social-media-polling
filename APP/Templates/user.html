@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user.css' %}">
+</head>
+<body>
+
+    <!--<header>
+        <h2 class="logo"></h2>
+        <nav class="navigation">
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Service</a>
+           <a href="#">Contact</a>
+           <button class="btn-login-popup">Login</button>
+        </nav>
+    </header> -->
+
+    <div class="warpper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="{% url 'dashboard' %}">
+                <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="tel"  required oninput="validatePhoneNumber(this)">
+                  <label>Phone Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="Password" required >
+                    <label >Password</label>
+                  </div>
+                  <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="{% url 'forgotpassword' %}">Forgot Password ?</a>
+                  </div>
+               <button type="submit" class="btn">Login</button>
+                  <div class="login-regester">
+                    <p>Don't have account ?<a href="{% url 'register' %}" class="register-link">Register</a></p>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <script>
+      function redirectTovote_participate() {
+        window.location.href = "vote_participate.html"; 
+      }
+
+      function validatePhoneNumber(input) {
+      var phoneNumber = input.value;
+      var phoneNumberPattern = /^[0-9]{10}$/;
+
+      if (!phoneNumberPattern.test(phoneNumber)) {
+        document.getElementById("error").innerText = "Please enter a valid 10-digit phone number.";
+      } else {
+        document.getElementById("error").innerText = "";
+      }
+    }
+    </script>
+</body>
+</html>

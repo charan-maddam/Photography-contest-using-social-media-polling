@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1530293959042-0aac487c21e3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMGFuZCUyMHdoaXRlfGVufDB8fDB8fHww') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+  
+  .container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: skyblue;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: grey;
+  }
+  

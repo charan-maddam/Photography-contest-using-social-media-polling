@@ -1,0 +1,65 @@
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:50vh
+}
+
+.user-login-btn,
+.admin-login-btn {
+  padding: 12px 24px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.user-login-btn:hover,
+.admin-login-btn:hover {
+  opacity: 0.8;
+}
+
+.user-login-btn {
+  background-color: blue;
+  color: skyblue;
+  margin-right: 20px;
+}
+
+.admin-login-btn {
+  background-color: blue;
+  color: skyblue;
+}
+
+.A {
+  font-family:serif;
+  color: blue;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.A h1 {
+  font-size: 5em;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.user-login-btn:focus,
+.admin-login-btn:focus {
+  outline: none;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149001485.jpg');
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+

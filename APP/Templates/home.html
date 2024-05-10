@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+  <style>
+    .A {
+      text-align: center; 
+    }
+
+    .A h1 {
+      font-size: 5em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="A">
+    <h1>Snap Contest</h1>
+  </div>
+    
+  <div class="container">
+    <a href="{% url 'login' %}"><button class="user-login-btn" >User Login</button></a>
+    <a href="{% url 'adminpage' %}"><button class="admin-login-btn">Admin Login</button></a>
+  </div>
+
+</body>
+</html>

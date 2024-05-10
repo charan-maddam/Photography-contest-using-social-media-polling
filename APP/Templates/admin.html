@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Panel</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'admin.css' %}">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="myform" >
+      <form action="{% url 'adminpage' %}" method="POST">
+        {% csrf_token %}
+        <h2>ADMIN LOGIN</h2>
+        <input type="number" placeholder="Phone Number" name="phone" required>
+        <input type="password" placeholder="Password" name= "password" required>
+        <div class="forgot">
+          <a href="{% url 'forgotpassword' %}">Forgot Password ?</a>
+        </div>
+          <button type="submit">LOGIN</button>
+        
+        <div class="login-regester">
+          <p>Don't have account ?<a href="{% url 'register' %}" class="sign up-link">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="image">
+      <img src="https://c0.wallpaperflare.com/preview/458/29/306/selective-focus-photography-of-dslr-camera.jpg">
+    </div>
+    
+  </div>
+  
+
+</body>
+</html>

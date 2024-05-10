@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <title>Vote or Participate</title>
+  <link rel="stylesheet" href="{% static 'vote_participate.css' %}">
+</head>
+<body>
+  <div class="container">
+    <a href="{% url 'vote' %}"><button>Vote</button></a>
+    <a href="{% url 'participate' %}"><button >Participate</button></a>
+  </div>
+  <a class="profile-link" href="{% url 'profile' %}">Your Profile</a>
+
+</body>
+</html>
+

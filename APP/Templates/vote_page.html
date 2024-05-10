@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'vote_page.css' %}">
+</head>
+<body>
+  <h1>VOTE FOR YOUR FAVOURITE PICTURE</h1>
+
+  <div class="gallery">
+    <div class="image">
+      <h3>Photographer Name:Mahesh</h3>
+      <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="Picture 1">
+      <p>"Every sunset brings the promise of a new dawn".</p>
+      <button class="like-button" onclick="likePicture(1)">👍</button>
+    </div>
+    <div class="image">
+      <h3>Photographer Name :John</h3>
+      <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="Picture 2">
+      <p> "In the right light, snow is poetry".</p>
+      <button class="like-button" onclick="likePicture(2)">👍</button>
+    </div>
+    <!-- Add more images and buttons as needed -->
+  </div>
+  <script>
+    // Initialize a counter for each picture
+    let likes = {
+      1: 0,
+      2: 0
+      // Add more counters for additional pictures if needed
+    };
+
+    // Function to increment the like counter for a picture
+    function likePicture(id) {
+      likes[id]++;
+      alert("You liked Picture " + id);
+      // You can add further actions here, such as updating the UI to reflect the new like count
+    }
+  </script>
+
+  <!-- JavaScript code for handling likes can be placed here -->
+
+</body>
+</html>
+

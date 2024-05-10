@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCuZgzh4fvNcsoqX4UNlN6NVKBfUaolXAPk5xdAZTFg&s') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensure body covers the entire viewport height */
+}
+
+.profile {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: none; /* Remove background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column; /* Display profile details in a single column */
+}
+
+.detail {
+  margin-bottom: 15px; /* Add some spacing between details */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Add some spacing between label and span */
+}
+
+span {
+  margin-left: 0; /* Reset margin-left for span */
+}

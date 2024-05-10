@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body>
+  <div class="profile">
+    <h1>Profile</h1>
+    <div class="profile-container">
+      <div class="profile-details">
+        <div class="detail">
+          <label for="username">Username:</label>
+          <span id="username">JohnDoe</span>
+        </div>
+        <div class="detail">
+          <label for="fullname">Full Name:</label>
+          <span id="fullname">John Doe</span>
+        </div>
+        <div class="detail">
+          <label for="email">Email:</label>
+          <span id="email">john.doe@example.com</span>
+        </div>
+        <div class="detail">
+          <label for="phone">Phone Number:</label>
+          <span id="phone"></span>
+        </div>
+        <!-- Add more details as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
