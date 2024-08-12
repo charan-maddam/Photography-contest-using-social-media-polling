@@ -15,7 +15,7 @@ This project is an innovative platform designed to host a public photography con
 ## Technology Stack
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python (Django framework)
-- **Database**: MySQL/PostgreSQL/SQLite for storing user data and contest information
+- **Database**: MySQL/SQLite for storing user data and contest information
 
 ## System Requirements
 - **Software**: Compatible with Windows, macOS, and Linux operating systems.
